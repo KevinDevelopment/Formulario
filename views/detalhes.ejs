@@ -1,6 +1,17 @@
 <%-include('partials/header.ejs'); %>
 <body>
     <%-include('partials/navbar.ejs'); %>
-    <h1>Pagina de detalhes</h1>
+
+    <div class="container">
+        <hr>
+        <h1>Cadastro de endereço:</h1>
+        <hr>
+        <p>Nome do cliente: <%= formulario.nome%></p>
+        <p>Endereço: <%= formulario.endereco%></p>
+        <p>Telefone de contato: <%= formulario.telefone_principal%></p>
+        <p>Telefone de recado: <%= formulario.telefone_recado%></p>
+        <p>Bairro: <%= formulario.bairro%></p>
+    </div>
+
 </body>
 <%-include('partials/footer.ejs'); %>

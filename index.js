@@ -46,7 +46,9 @@ app.get("/detalhes/:id", (request, response) => {
         }
     }).then((formulario) => {
         if (formulario != undefined) {
-            response.render("detalhes")
+            response.render("detalhes", {
+                formulario: formulario
+            })
         }
         else {
             response.redirect("/formulario")
