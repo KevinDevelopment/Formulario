@@ -1,0 +1,35 @@
+
+<%-include('partials/header.ejs'); %>
+<body>
+    <%-include('partials/navbar.ejs'); %>
+
+    <div class="container">
+
+        <a href="/formulario"><button class="btn btn-info mb-3">Formulario</button></a>
+
+       <% formulario.forEach((item) => { %>
+
+       
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3><%= item.nome%></h3>
+                    <h4><%= item.email%></h4>
+                </div>
+                <div class="card-body">
+                    <p><%=item.bairro%></p>
+                    <p><%=item.cidade%></p>
+                    <p><%=item.estado%></p>
+                    <p><%=item.telefone_principal%></p>
+                </div>
+                <div class="card-footer">
+                    
+                </div>
+            </div>
+       
+            
+        <%})%>
+    </div>
+
+    
+</body>
+<%-include('partials/footer.ejs'); %>

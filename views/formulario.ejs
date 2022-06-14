@@ -1,0 +1,55 @@
+
+<%-include('partials/header.ejs'); %>
+<body>   
+
+    <%-include('partials/navbar.ejs'); %>
+        <div class="card">
+            <div class="card-header">
+                Cadastro de endereço
+            </div>
+            <div class="card-body">
+                <form method="post" action="/insert" class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Nome" name="nome">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Email" name="email">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="CEP" name="cep">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="Logradouro" name="logradouro">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" placeholder="Numero" name="numero">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Complemento" name="complemento">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Bairro" name="bairro">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Cidade" name="cidade">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Estado" name="estado">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Telefone Principal" name="telefone_principal">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Telefone Recado" name="telefone_recado">
+                    </div>
+                    <textarea class="form-control" name="sugestao" id="" cols="30" rows="5" placeholder="Descreva sua sugestão aqui "></textarea>
+                    <button type="submit" class="btn btn-info">Cadastrar</button>
+                </form>
+            </div>
+        </div>        
+    </div>   
+    
+</body>
+<%-include('partials/footer.ejs'); %>
+
+
